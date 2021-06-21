@@ -8,7 +8,7 @@ button {
 .btn {
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   background-color: #00b4d8;
   border: solid 2px #00b4d8;
@@ -25,10 +25,11 @@ button {
   border: solid 2px #48cae4;
 }
 
+/* COlOR section */
 .btn--default {
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   background-color: #E0E0E0;
   border: solid 2px #E0E0E0;
@@ -44,11 +45,10 @@ button {
   background-color: #E0E0E0;
   border: solid 2px #E0E0E0;
 }
-
 .btn--primary {
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   background-color: #00b4d8;
   border: solid 2px #00b4d8;
@@ -64,11 +64,10 @@ button {
   background-color: #48cae4;
   border: solid 2px #48cae4;
 }
-
 .btn--error {
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   background-color: #d90429;
   border: solid 2px #d90429;
@@ -83,6 +82,14 @@ button {
   color: #081c15;
   background-color: #48cae4;
   border: solid 2px #48cae4;
+}
+
+/* SHAPE section */
+.btn--round {
+  border-radius: 1.5rem;
+}
+.btn--rect {
+  border-radius: 0;
 }
 
 /*# sourceMappingURL=master.css.map */

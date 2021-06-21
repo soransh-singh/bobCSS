@@ -10,8 +10,16 @@ button {
 @mixin btn(){
   font-weight: bold;
   text-transform: uppercase;
-  border-radius: 1.5rem;
+  border-radius: .5rem;
   padding: 1rem 2rem;
+}
+
+@mixin btn--round(){
+  border-radius: 1.5rem;
+}
+
+@mixin btn--rect(){
+  border-radius: 0;
 }
 
 @mixin btn-clr($clr, $bg-clr, $br-clr){
@@ -44,28 +52,31 @@ button {
   }
 }
 
-.btn--default{
-  @include btn-clr(#081c15, #E0E0E0, #E0E0E0);
-  &:hover{
-    @include btn-clr-hover(white, #AEAEAE, #AEAEAE);
-  }
-  &:active{
-    @include btn-clr-active(#081c15, #E0E0E0, #E0E0E0);
+
+/* COlOR section */
+
+.btn{
+  &--default{
+    @include btn-clr(#081c15, #E0E0E0, #E0E0E0);
+    &:hover{
+      @include btn-clr-hover(white, #AEAEAE, #AEAEAE);
+    }
+    &:active{
+      @include btn-clr-active(#081c15, #E0E0E0, #E0E0E0);
+    }
   }
 
-}
-
-.btn--primary{
-  @include btn-clr(white, #00b4d8, #00b4d8);
-  &:hover{
-    @include btn-clr-hover(white, #90e0ef, #90e0ef);
+  &--primary{
+    @include btn-clr(white, #00b4d8, #00b4d8);
+    &:hover{
+      @include btn-clr-hover(white, #90e0ef, #90e0ef);
+    }
+    &:active{
+      @include btn-clr-active(#081c15, #48cae4, #48cae4);
+    }
   }
-  &:active{
-    @include btn-clr-active(#081c15, #48cae4, #48cae4);
-  }
-}
 
-.btn--error{
+  &--error{
     @include btn-clr(white, #d90429, #d90429);
     &:hover{
       @include btn-clr-hover(white, #f94144, #f94144);
@@ -73,4 +84,19 @@ button {
     &:active{
       @include btn-clr-active(#081c15, #48cae4, #48cae4);
     }
+  }
+}
+
+/* SHAPE section */
+
+.btn{
+
+  &--round{
+    @include btn--round();
+  }
+
+  &--rect{
+    @include btn--rect();
+  }
+  
 }
