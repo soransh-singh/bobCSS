@@ -1,0 +1,76 @@
+
+// reset default buttons
+button {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+@mixin btn(){
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+@mixin btn-clr($clr, $bg-clr, $br-clr){
+  @include btn();
+  background-color: $bg-clr;
+  border: solid 2px $br-clr;
+  color: $clr;
+}
+
+@mixin btn-clr-hover($clr, $bg-clr, $br-clr){
+  color: $clr;
+  background-color: $bg-clr;
+  border: solid 2px $br-clr;
+}
+
+@mixin btn-clr-active($clr, $bg-clr, $br-clr){
+  color: $clr;
+  background-color: $bg-clr;
+  border: solid 2px $br-clr;
+}
+
+.btn{
+  @include btn-clr(white, #00b4d8, #00b4d8);
+
+  &:hover{
+    @include btn-clr-hover(white, #90e0ef, #90e0ef);
+  }
+  &:active{
+    @include btn-clr-active(white, #48cae4, #48cae4)
+  }
+}
+
+.btn--default{
+  @include btn-clr(#081c15, #E0E0E0, #E0E0E0);
+  &:hover{
+    @include btn-clr-hover(white, #AEAEAE, #AEAEAE);
+  }
+  &:active{
+    @include btn-clr-active(#081c15, #E0E0E0, #E0E0E0);
+  }
+
+}
+
+.btn--primary{
+  @include btn-clr(white, #00b4d8, #00b4d8);
+  &:hover{
+    @include btn-clr-hover(white, #90e0ef, #90e0ef);
+  }
+  &:active{
+    @include btn-clr-active(#081c15, #48cae4, #48cae4);
+  }
+}
+
+.btn--error{
+    @include btn-clr(white, #d90429, #d90429);
+    &:hover{
+      @include btn-clr-hover(white, #f94144, #f94144);
+    }
+    &:active{
+      @include btn-clr-active(#081c15, #48cae4, #48cae4);
+    }
+}
