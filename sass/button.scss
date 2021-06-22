@@ -41,7 +41,7 @@ button {
   border: solid 2px $br-clr;
 }
 
-.btn{
+[class*="btn"]{
   @include btn-clr(white, #00b4d8, #00b4d8);
 
   &:hover{
@@ -55,48 +55,49 @@ button {
 
 /* COlOR section */
 
-.btn{
-  &--default{
-    @include btn-clr(#081c15, #E0E0E0, #E0E0E0);
-    &:hover{
-      @include btn-clr-hover(white, #AEAEAE, #AEAEAE);
-    }
-    &:active{
-      @include btn-clr-active(#081c15, #E0E0E0, #E0E0E0);
-    }
+[class*="--default"]{
+  @include btn-clr(#081c15, #E0E0E0, #E0E0E0);
+  &:hover{
+    @include btn-clr-hover(white, #AEAEAE, #AEAEAE);
   }
-
-  &--primary{
-    @include btn-clr(white, #00b4d8, #00b4d8);
-    &:hover{
-      @include btn-clr-hover(white, #90e0ef, #90e0ef);
-    }
-    &:active{
-      @include btn-clr-active(#081c15, #48cae4, #48cae4);
-    }
-  }
-
-  &--error{
-    @include btn-clr(white, #d90429, #d90429);
-    &:hover{
-      @include btn-clr-hover(white, #f94144, #f94144);
-    }
-    &:active{
-      @include btn-clr-active(#081c15, #48cae4, #48cae4);
-    }
+  &:active{
+    @include btn-clr-active(#081c15, #E0E0E0, #E0E0E0);
   }
 }
 
+[class*="--primary"]{
+  @include btn-clr(white, #00b4d8, #00b4d8);
+  &:hover{
+    @include btn-clr-hover(white, #90e0ef, #90e0ef);
+  }
+  &:active{
+    @include btn-clr-active(#081c15, #48cae4, #48cae4);
+  }
+}
+
+[class*="--error"]{
+  @include btn-clr(white, #d90429, #d90429);
+  &:hover{
+    @include btn-clr-hover(white, #f94144, #f94144);
+  }
+  &:active{
+    @include btn-clr-active(white, #d90429, #d90429);
+  }
+}
+
+[class*="--outline"]{
+  @include btn-clr(inherit, transparent, inherit);
+}
+
+
+
 /* SHAPE section */
 
-.btn{
 
-  &--round{
-    @include btn--round();
-  }
+[class*="--round"]{
+  @include btn--round();
+}
 
-  &--rect{
-    @include btn--rect();
-  }
-  
+[class*="--rect"]{
+  @include btn--rect();
 }
