@@ -1,0 +1,63 @@
+//import google font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// theme color variables
+$clr-pr : #326dee;
+$clr-sec : #1ac888;
+$clr-err : #d32752;
+$clr-info : #f6c31c;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+
+
+/* reset styles */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  color: inherit;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+}
+
+.error{
+  color: $clr-err;
+  border-color: $clr-err;
+  border-style: solid;
+  margin: $base-margin;
+  padding: .5rem $base-padding;
+  border-radius: $base-border-radius
+}
+
+.notification{
+  color: $clr-info;
+  border-color: $clr-info;
+  border-style: solid;
+  padding: $base-padding;
+
+}
