@@ -33,7 +33,7 @@ a {
   border-style: solid;
   margin: 0.75rem;
   padding: 0.5rem 0.75rem;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .notification {
@@ -41,6 +41,25 @@ a {
   border-color: #f6c31c;
   border-style: solid;
   padding: 0.75rem;
+}
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.card .card-title {
+  font-size: 2rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 1rem;
+}
+.card .card-body a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=master.css.map */
