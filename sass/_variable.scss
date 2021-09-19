@@ -4,6 +4,28 @@ $clr-sec : #1ac888;
 $clr-err : #d32752;
 $clr-info : #f6c31c;
 
+// color pallette
+
+$colors: (
+  "primary": $clr-pr,
+  "secondary": $clr-sec,
+  "error": $clr-err,
+  "info": $clr-info,
+  "blue": #1919e6,
+  "red": #e61919,
+  "yellow": #e6e619,
+  "green": #19e635,
+  "orange": #ffe635,
+  "purple": #9900ff,
+  "gray": #808080,
+  "black": black,
+  "white": white
+);
+
+@debug map-get($colors, "purple");
+@debug map-has-key($colors, "secondary");
+
+
 // spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;

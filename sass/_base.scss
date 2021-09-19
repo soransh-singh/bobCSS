@@ -30,20 +30,3 @@ li{
 a{
   text-decoration: none;
 }
-
-.error{
-  color: $clr-err;
-  border-color: $clr-err;
-  border-style: solid;
-  margin: $base-margin;
-  padding: .5rem $base-padding;
-  border-radius: math.div($base-border-radius,4);
-}
-
-.notification{
-  color: $clr-info;
-  border-color: $clr-info;
-  border-style: solid;
-  padding: $base-padding;
-
-}
