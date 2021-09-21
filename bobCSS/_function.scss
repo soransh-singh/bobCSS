@@ -1,0 +1,6 @@
+
+@function light-comp($clr){
+  $complement: complement($clr);
+  $light-complement: lighten($complement, 5);
+  @return $light-complement
+}
