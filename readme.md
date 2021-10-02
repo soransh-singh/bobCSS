@@ -1,6 +1,6 @@
 # BobCSS
 
-A small CSS Library like bootstrap and tailwind to practice sass.
+A small CSS Library like bootstrap/tailwind.
 
 ## resource
 

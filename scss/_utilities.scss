@@ -128,6 +128,56 @@ $utilities: (
       "4": $base-margin * 6,
       "5": $base-margin * 8,
     )
+  ),
+
+  "opacity":(
+    "prefix": "o",
+    "values": (
+      "10": 0.1,
+      "20": 0.2,
+      "30": 0.3,
+      "40": 0.4,
+      "50": 0.5,
+      "60": 0.6,
+      "70": 0.7,
+      "80": 0.8,
+      "90": 0.9,
+      "100": 1,
+    )
+  ),
+
+  "border-radius":(
+    "prefix": br,
+    "value": (
+      "default": $base-border-radius,
+      "none": 0,
+      "xs": math.div($base-border-radius, 4),
+      "sm": math.div($base-border-radius, 2),
+      "lg": $base-border-radius*2,
+      "full": 50%,
+    )
+  ),
+
+  "display": (
+    "prefix": "display",
+    "value": (
+      "n": none,
+      "b": block,
+      "f": flex,
+      "i": inline,
+      "i-b": inline-block,
+    )
+  ),
+
+  "font-size":(
+    "prefix": "font",
+    "value": (
+      "sm": $font-size-sm,
+      "md": $base-font-size,
+      "lg": $font-size-lg,
+      "xl": $font-size-xl,
+      "xxl": $font-size-xxl,
+    )
   )
 
 );
