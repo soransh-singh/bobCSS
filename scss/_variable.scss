@@ -22,8 +22,8 @@ $colors: (
   "white": white
 );
 
-@debug map-get($colors, "purple");
-@debug map-has-key($colors, "secondary");
+// @debug map-get($colors, "purple");
+// @debug map-has-key($colors, "secondary");
 
 
 // spacing
