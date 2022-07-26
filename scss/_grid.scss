@@ -8,6 +8,8 @@ $grid-gaps: (
   "3": 30px,
 );
 
+$layout-values: flex-start, flex-end, center, space-between, space-around;
+
 // base layout class
 
 .container {
@@ -34,6 +36,12 @@ $grid-gaps: (
   }
 }
 
+// Justify Content classes
+@each $val in $layout-values {
+  .Justify-#{$val}{
+    justify-content: $val;
+  }
+}
 
 // col classes
 @include xs{
